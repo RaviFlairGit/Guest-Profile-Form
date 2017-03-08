@@ -1,173 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Guest Profile Form</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <style>
-	  .box{border:1px solid #ddd;}
-	  </style>
-   </head>
-   <body>
-      <div class="container">
-         <h2>Guest Profile Form</h2>
-		 <h1>&nbsp;</h1>
-		 <h4>Personal Details</h4>
-         <form class="form-horizontal">		 
+
+<head>
+    <title>Guest Profile Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+    <style>
+    .parallax {
+        background-image: url("http://www.jainprateek.net/wp-content/uploads/2017/03/cover.jpg");
+        height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{margin-bottom: 50px;}
+    </style>
+</head>
+
+<body>
+    <div class="parallax"></div>
+    <div class="container">
+        <h2>Guest Profile Form</h2>
+        <h1>&nbsp;</h1>
+        <h4>Personal Details</h4>
+        <form class="form-horizontal">
             <div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="firstName">Your First Name:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="firstName" placeholder="Your First Name">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="partnersFirstName">Travel Partner's First Name:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="partnersFirstName" placeholder="Travel Partner's First Name">
-                     </div>
-                  </div>
-               </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="firstName">Your First Name:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="firstName" placeholder="Your First Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="partnersFirstName">Travel Partner's First Name:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="partnersFirstName" placeholder="Travel Partner's First Name">
+                        </div>
+                    </div>
+                </div>
             </div>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="lastName">Surname:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="lastName" placeholder="Surname">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="partnersLasttName">Surname:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="partnersLasttName" placeholder="Surname">
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="lastName">Surname:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="lastName" placeholder="Surname">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="partnersLasttName">Surname:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="partnersLasttName" placeholder="Surname">
+                        </div>
+                    </div>
+                </div>
             </div>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="dateOfBirth">Date Of Birth:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="dateOfBirth" placeholder="Date Of Birth">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="partnersdateOfBirth">Date Of Birth:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="partnersdateOfBirth" placeholder="Date Of Birth">
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="dateOfBirth">Date Of Birth:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="dateOfBirth" placeholder="Date Of Birth">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="partnersdateOfBirth">Date Of Birth:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="partnersdateOfBirth" placeholder="Date Of Birth">
+                        </div>
+                    </div>
+                </div>
             </div>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="yourLanguage">Spoken / Preferred Language:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="yourLanguage" placeholder="Spoken/Preferred Language">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="partnersLanguage">Spoken / Preferred Language:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="partnersLanguage" placeholder="Spoken/Preferred Language">
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="yourLanguage">Spoken / Preferred Language:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="yourLanguage" placeholder="Spoken/Preferred Language">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="partnersLanguage">Spoken / Preferred Language:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="partnersLanguage" placeholder="Spoken/Preferred Language">
+                        </div>
+                    </div>
+                </div>
             </div>
-			<hr>
-			<h4>Personal Details Of Your Children</h4>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="firstChildName">Name:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="firstChildName" placeholder="Name">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="secondChildName">Name:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="secondChildName" placeholder="Name">
-                     </div>
-                  </div>
-               </div>
+            <hr>
+            <h4>Personal Details Of Your Children</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="firstChildName">Name:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="firstChildName" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="secondChildName">Name:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="secondChildName" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
             </div>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="firstChildDob">Date Of Birth:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="firstChildDob" placeholder="Date Of Birth">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="secondChildDob">Date Of Birth:</label>
-                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="secondChildDob" placeholder="Date Of Birth">
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="firstChildDob">Date Of Birth:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="firstChildDob" placeholder="Date Of Birth">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="secondChildDob">Date Of Birth:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="secondChildDob" placeholder="Date Of Birth">
+                        </div>
+                    </div>
+                </div>
             </div>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="firstChildTitle">Title:</label>
-                     <div class="col-sm-7">
-                        <label class="radio-inline"><input type="radio" name="firstChildTitle" value="">Master</label>
-						<label class="radio-inline"><input type="radio" name="firstChildTitle" value="">Miss</label>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="secondChildTitle">Title:</label>
-                     <div class="col-sm-7">
-                        <label class="radio-inline"><input type="radio" name="secondChildTitle" value="">Master</label>
-						<label class="radio-inline"><input type="radio" name="secondChildTitle" value="">Miss</label>
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="firstChildTitle">Title:</label>
+                        <div class="col-sm-7">
+                            <label class="radio-inline">
+                                <input type="radio" name="firstChildTitle" value="">Master</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="firstChildTitle" value="">Miss</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="secondChildTitle">Title:</label>
+                        <div class="col-sm-7">
+                            <label class="radio-inline">
+                                <input type="radio" name="secondChildTitle" value="">Master</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="secondChildTitle" value="">Miss</label>
+                        </div>
+                    </div>
+                </div>
             </div>
-			<hr>
-			<h4>Contact Details</h4>
-			<div class="row">
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="phoneNumber">Mobile Number:</label>
-                     <div class="col-sm-7">
-                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Mobile Number">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="form-group">
-                     <label class="control-label col-sm-5" for="emailAddress">Email Address:</label>
-                     <div class="col-sm-7">
-                        <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
-                     </div>
-                  </div>
-               </div>
+            <hr>
+            <h4>Contact Details</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="phoneNumber">Mobile Number:</label>
+                        <div class="col-sm-7">
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Mobile Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="emailAddress">Email Address:</label>
+                        <div class="col-sm-7">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+                        </div>
+                    </div>
+                </div>
             </div>
-         </form>
-      </div>
-   </body>
+            <hr>
+            <div class="text-center" style="width:100%; max-width: 500px; margin:auto;">
+                <h4>Arrival & Depature Details</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Arriving From</th>
+                            <th class="text-center">Flight No.</th>
+                            <th class="text-center">Flight ETA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" id="arrivingFrom" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" id="arrivalFlightNo" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" id="arrivalFlightETA" class="form-control">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Departing To</th>
+                            <th class="text-center">Flight No.</th>
+                            <th class="text-center">Flight ETA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" id="departingTo" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" id="departingFlightNo" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" id="departingFlightETA" class="form-control">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <h4>Are You Celebrating A Special Occasion Whilst At Six Senses Yao Noi? </h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="occasionDate">Date:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="occasionDate" placeholder="Occasion Date">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="occasion">Occasion:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="occasion" placeholder="Occasion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4>Dietary Requirments </h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="allergies">Allergies:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="allergies" placeholder="Allergies">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="otherRequest">Other Speical Request:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="otherRequest" placeholder="Other Speical Request">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+        <!--All custom code goes here-->
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#dateOfBirth').datepicker();
+        });
+        </script>
+    </div>
+</body>
+
 </html>
